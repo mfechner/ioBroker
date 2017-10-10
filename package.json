@@ -1,0 +1,88 @@
+{
+  "_from": "iobroker",
+  "_id": "iobroker@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-JH3ZVUfzsGN5cA8Z5AAuck9O+aI=",
+  "_location": "/iobroker",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "iobroker",
+    "name": "iobroker",
+    "escapedName": "iobroker",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/iobroker/-/iobroker-1.0.1.tgz",
+  "_shasum": "247dd95547f3b06379700f19e4002e724f4ef9a2",
+  "_spec": "iobroker",
+  "_where": "/usr/local/www/iobroker",
+  "author": {
+    "name": "bluefox",
+    "email": "dogafox@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ioBroker/ioBroker/issues"
+  },
+  "bundleDependencies": false,
+  "config": {
+    "unsafe-perm": true
+  },
+  "contributors": [
+    {
+      "name": "bluefox",
+      "email": "dogafox@gmail.com"
+    },
+    {
+      "name": "hobbyquaker"
+    }
+  ],
+  "dependencies": {
+    "yargs": "^7.0.2"
+  },
+  "deprecated": false,
+  "description": "automate your life - platfom",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "homepage": "http://iobroker.net",
+  "keywords": [
+    "ioBroker",
+    "Smarthome",
+    "Home Automation",
+    "Smart Metering",
+    "Homematic",
+    "Hue",
+    "KNX",
+    "Z-Wave",
+    "ZigBee",
+    "Bidcos",
+    "TV",
+    "Sonos",
+    "AV Receiver"
+  ],
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/ioBroker/ioBroker/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/setup.js",
+  "name": "iobroker",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioBroker/ioBroker.git"
+  },
+  "scripts": {
+    "install": "node lib/setup.js"
+  },
+  "version": "1.0.1"
+}
