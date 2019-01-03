@@ -573,7 +573,17 @@ if [[ "$INITSYSTEM" = "init.d" ]]; then
 		# Description:       starts ioBroker
 		### END INIT INFO
 		PIDF=$CONTROLLER_DIR/lib/iobroker.pid
-		NODECMD=\$(which node)
+		HOMEDIR=`getent passwd ${IOB_USER} | cut -d\: -f 6`
+		NVM_DIR="\${HOMEDIR}/.nvm"
+		if [ -d "\${NVM_DIR}" ]; then
+			export NVM_DIR
+			[ -s "\$NVM_DIR/nvm.sh" ] && \. "\$NVM_DIR/nvm.sh"  # This loads nvm
+			NODECMD=`nvm which node`
+			echo "NVM detected."
+			echo "Use \${NODECMD} to start IOBroker."
+		else
+			NODECMD=\$(which node)
+		fi
 		RETVAL=0
 
 		start() {
